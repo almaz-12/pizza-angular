@@ -1,0 +1,96 @@
+.footer {
+    padding-top: 185px;
+    padding-bottom: 100px;
+    background: url(../../../assets/images/decor/pizzzzza.png) no-repeat 85% 100%;
+}
+
+.footer__row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer__title {
+    font-size: 35px;
+    color: #ffaf18;
+    font-family: "Muller Extra Bold";
+}
+
+.footer__title--color {
+    margin-top: 10px;
+    color: #b99150;
+    line-height: 1;
+}
+
+.footer__content { 
+    margin-bottom: 0;   
+    margin-top: 58px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #b99150;
+    font-family: "Muller Regular";
+}
+
+
+.footer__form {    
+    width: 100%;
+    padding-top: 50px;
+}
+
+.input {
+    width: 100%;
+    padding: 20px 23px;
+    background-color: #ffffff;
+    border: 1px solid #b99150;
+}
+
+.form__field-box {
+    margin-bottom: 20px;
+}
+
+.form__btn {
+    width: 100%;
+}
+
+::-webkit-input-placeholder {
+    font-size: 18px;
+    color: #cba86e;
+    font-family: "Muller Regular";
+}
+::-moz-placeholder          {
+    font-size: 18px;
+    color: #cba86e;
+    font-family: "Muller Regular";
+}
+:-moz-placeholder           {
+    font-size: 18px;
+    color: #cba86e;
+    font-family: "Muller Regular";
+}
+:-ms-input-placeholder      {
+    font-size: 18px;
+    color: #cba86e;
+    font-family: "Muller Regular";
+}
+
+@media (min-width: 767px) {
+    .footer__info {
+        max-width: 340px;
+    }
+    .footer__form {
+        max-width: 330px;
+    } 
+}
+@media (min-width: 992px) {
+    .footer {
+        background: url(../../../assets/images/decor/pizzzzza.png) no-repeat 85% 115px;
+    }  
+    .footer__info {
+        max-width: 400px;
+        margin-right: 110px;
+    }
+    
+    .footer__row {
+        justify-content: flex-start;
+    }
+}

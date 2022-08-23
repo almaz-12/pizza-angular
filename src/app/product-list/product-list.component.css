@@ -1,0 +1,44 @@
+.products {
+    padding: 20px 0;
+}
+.products__title {
+    margin-top: 0;
+    margin-bottom: 58px;
+    font-size: 35px;
+    color: #bd985c;
+    font-weight: bold;
+    font-family: "Muller Bold";
+    text-align: center;
+}
+
+.products-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    margin-left: -12px;
+    margin-right: -12px;
+}
+
+.products-list__item {
+    width: 100%;
+    margin-right: 12px;
+    margin-left: 12px;
+}
+@media (min-width: 767px) {
+    .products-list__item {
+        width: calc(50% - 24px);
+    }
+}
+@media (min-width: 992px) {
+    .products-list__item {
+        width: calc(100%/3 - 24px);
+    }
+}
+@media (min-width: 1260px) {
+    .products-list__item {
+        width: calc(25% - 24px);
+    }
+}
+.products-list__item {
+    margin-bottom: 25px;
+}

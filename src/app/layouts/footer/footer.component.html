@@ -1,0 +1,54 @@
+<footer class="footer">
+    <div class="x-container">
+        <div class="footer__row">
+            <div class="footer__info">
+                <div class="footer__title">Хватит думать!</div>
+                <div class="footer__title footer__title--color">Доставим заказ за 30 минут!</div>       
+                <p class="footer__content">
+                    Мы  гарантированно доставим вашу пиццу за 30 минут с момента оформления заказа. 
+                    Если мы опоздаем даже на 1 минуту - вы получаете весь заказ бесплатно 
+                    и ваучер на скидку на следующий заказ. Мы гордимся нашим сервисом и сделаем всё, 
+                    чтобы наш клиент был доволен и не остался голодный!
+                </p>
+            </div>
+            <div class="footer__form">
+                <div class="form">
+                    <form action="" [formGroup]="clientForm" novalidate (submit)="newOrder()">
+                        
+                        <div class="form__field-box">
+                            <input class="form__field input" type="text" placeholder="Ваше имя" formControlName="name" withoutDot="true">
+                            <div
+                                *ngIf="_name.invalid && (_name.dirty || _name.touched)"
+                                >
+                                <div *ngIf="_name.errors.required">
+                                    Обязательное поле
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form__field-box">
+                            <input class="form__field input" type="text" placeholder="Адрес доставки" formControlName="address">
+                            <div
+                                *ngIf="_address.invalid && (_address.touched || _address.dirty)"
+                                >
+                                <span *ngIf="_address.errors?.required"
+                                    >Обязательное поле</span
+                                >
+                            </div>
+                        </div>
+                         <div class="form__field-box">
+                            <input class="form__field input" type="text" placeholder="Телефон" formControlName="phone">
+                            <div
+                                *ngIf="_phone.invalid && (_phone.touched || _phone.dirty)"
+                                >
+                                <span *ngIf="_phone.errors?.required"
+                                    >Обязательное поле</span
+                                >
+                            </div>
+                        </div>
+                        <button type="submit" class="btn form__btn">Оформить заказ</button>
+                    </form>
+                </div>                
+            </div>
+        </div>
+    </div>    
+</footer>

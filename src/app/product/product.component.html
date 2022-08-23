@@ -1,0 +1,8 @@
+<div class="product">
+    <div class="product__img">
+        <img src="./assets/images/pizza/{{product.id}}.png" alt="{{ product.name }}" class="product__img" (click)="openDialog($event)">
+    </div>                        
+    <div class="product__name">{{ product.name }}</div>
+    <p class="product__ingredients">{{ product.ingredients }}</p>
+    <button class="btn product__btn">Заказать</button>
+</div>

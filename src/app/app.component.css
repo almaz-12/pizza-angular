@@ -1,0 +1,93 @@
+.w-container {
+    max-width: 780px;
+}
+
+.welcome__wrap {
+    padding: 123px 0 128px;
+    background-image: none;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+}
+
+.title {
+    margin: 0;
+    font-size: 45px;
+    line-height: 55px;
+    color: #b99150;
+    font-family: "Muller Extra Bold";
+}
+
+.title__line {
+    display: block;
+}
+
+.title__line--second {
+    color: #ffaf18;
+}
+
+.benefits-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin: 0;
+}
+
+.benefits-list__item {
+    flex-basis: 342px;
+    margin-bottom: 40px;
+}
+
+.benefit-item {
+    display: flex;
+    align-items: flex-start;
+    padding-right: 15px;
+}
+
+.benefit-item__content {
+    margin-left: 14px;
+}
+
+.welcome__benefits {
+    margin-top: 42px;
+}
+
+.benefit-item__title {
+    font-size: 16px;
+    line-height: 1;
+    text-transform: uppercase;
+    color: #ffaf18;
+    font-weight: 800;
+}
+
+.benefit-item__icon {
+    display: block;
+}
+
+.benefit-item__desc {
+    margin-bottom: 0;
+    font-size: 16px;
+    line-height: 1;
+    color: #b99150;
+}
+
+.welcome__btn {    
+    max-width: 224px;
+    margin-top: 18px;
+}
+@media (min-width: 767px) {
+    .welcome__wrap {
+        background-image: url("../assets/images/decor/pizza_big.png");
+        background-size: 35%;
+    }
+}
+@media (min-width: 992px) {
+    .welcome__wrap {
+        background-size: 45%;
+    }
+}
+@media (min-width: 1260px) {
+    .welcome__wrap {
+        background-size: initial;        
+        background-position: right center;
+    }
+}

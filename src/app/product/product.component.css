@@ -1,0 +1,39 @@
+
+.product {
+    position: relative;
+    height: 100%;
+    padding: 25px 20px 75px;
+    filter: drop-shadow(0px 3px 7.5px rgba(152,152,152,0.2));
+    background-color: #ffffff;
+}
+
+.product__img {
+    text-align: center;
+    cursor: pointer;
+}
+
+.product__name {
+    font-size: 18px;
+    color: #382400;
+    font-weight: bold;
+    font-family: "Muller Bold";
+    text-align: center;
+}
+
+.product__ingredients {
+    padding: 0 10px;
+    margin-bottom: 16px;
+    margin-top: 16px;
+    color: #181a1a;
+    font-family: "Muller Regular";
+    line-height: 18px;
+    text-align: center;
+}
+
+.product__btn {
+    position: absolute;
+    bottom: 15px;
+    left: 20px;
+    right: 20px;
+    width: auto !important;
+}

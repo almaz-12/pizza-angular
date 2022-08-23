@@ -1,0 +1,12 @@
+<section class="products">
+    <div class="x-container">
+        <h2 class="products__title">Выберите свою любимую пиццу</h2>
+        <nav class="nav-products">
+            <ul class="products-list">
+                <li class="products-list__item" *ngFor="let product of products">
+                    <app-product [product]="product"></app-product>
+                </li>
+            </ul>
+        </nav>
+    </div>    
+</section>
